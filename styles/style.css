@@ -78,6 +78,7 @@ body {
 .footer-section {
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 .footer-past {
     width: 483.87px;
@@ -99,4 +100,32 @@ body {
 .copyright {
     font-size: 18px;
 
+}
+
+/* --------------------------
+    media queries styles
+----------------------------- */
+@media only screen and (max-width: 688px) {
+    body {
+        overflow-x: hidden;
+    }
+    .banners {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+        grid-row-gap: 50px;
+    }
+    .banner-title, .banner {
+        width: 95%;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .footer-past {
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        grid-row-gap: 30px;
+    }
 }
